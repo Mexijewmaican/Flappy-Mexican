@@ -1,15 +1,12 @@
 import javax.swing.*;
-import java.awt.*;
+import java.awt.Graphics2D;
 import java.awt.image.BufferStrategy;
 
 
-/**
- * Created by 3074007 on 2014-02-19.
- */
-public class Kanvas extends Canvas {
+public class Kanvas extends java.awt.Canvas {
 
     boolean gameRunning;
-    BufferStrategy strategy;
+    private BufferStrategy strategy;
 
 
 
@@ -28,8 +25,8 @@ public class Kanvas extends Canvas {
             lastLoopTime = System.currentTimeMillis();
 
             Graphics2D g = (Graphics2D) strategy.getDrawGraphics();
-            
 
+            g.drawString("boats and hoes", 100, 100);
         }
 
 
